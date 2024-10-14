@@ -1,0 +1,12 @@
+configure terminal
+vlan 10
+vlan 30
+show vlan brief
+interface fa0/8
+switchport mode access
+switchport access vlan 10
+
+R1(config)#interface fa0/0
+ip address 172.17.10.1 255.255.255.0
+no shutdown
+
